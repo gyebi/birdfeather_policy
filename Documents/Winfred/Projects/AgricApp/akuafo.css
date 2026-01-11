@@ -1,0 +1,266 @@
+/* ===== Reset & base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #f3f6fb;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* ===== Top bar ===== */
+.topbar {
+  background: #ffffff;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Typography ===== */
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Form ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===== Buttons ===== */
+.primary-btn {
+  margin-top: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #1e4fd8;
+}
+
+.ghost-btn {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== Status text ===== */
+.status-text {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ===== Card header ===== */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ===== Metrics ===== */
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metric {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.metric-label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.metric-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pill {
+  flex: 1;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ===== Chart ===== */
+.chart-card {
+  margin-top: 20px;
+}
+
+.chart-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chart-area {
+  height: 140px;
+  background: linear-gradient(180deg, #ecf2ff, #ffffff);
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  padding: 12px;
+}
+
+/* ===== Recommendation ===== */
+.decision-card {
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.decision-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.decision-reason {
+  font-size: 14px;
+}
+
+/* Color states (we'll toggle these later in JS) */
+.decision-good {
+  background: #e6f9ee;
+  color: #065f46;
+}
+
+.decision-wait {
+  background: #fff7ed;
+  color: #92400e;
+}
+
+.decision-bad {
+  background: #fee2e2;
+  color: #7f1d1d;
+}
+
+/* ===== Explanation ===== */
+.explain-card {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.explain-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.explain-list {
+  list-style: none;
+  font-size: 13px;
+  color: #374151;
+}
+
+.explain-list li {
+  margin-bottom: 6px;
+}
+
+
+/* ===== Rainfall Chart Bars ===== */
+.rain-bar {
+  flex: 1;
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s ease;
+}
+
+.rain-bar.rainy {
+  background: linear-gradient(180deg, #60a5fa, #2563eb);
+}
+
+.rain-bar.dry {
+  background: #e5e7eb;
+}
