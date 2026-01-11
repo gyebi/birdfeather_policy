@@ -2,7 +2,7 @@
 
 PlantSmart is a lightweight, farmer-focused web application designed to help smallholder farmers in **West Africa** decide **when to plant crops**, based on **rainfall forecasts and crop-specific agronomic rules**.
 
-The app converts complex weather data into **simple, explainable planting recommendations** such as:
+The app converts complex weather data/info into **simple, explainable planting recommendations** such as:
 
 - ✅ Plant now  
 - ⏳ Wait a few days  
